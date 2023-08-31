@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/background.png</file>
+        <file>img/btn_add.png</file>
+        <file>img/btn_alter.png</file>
+        <file>img/btn_emoji.png</file>
+        <file>img/btn_file.png</file>
+        <file>img/btn_img.png</file>
+        <file>img/btn_mini.png</file>
+        <file>img/btn_screenshot.png</file>
+        <file>img/btn_search.png</file>
+        <file>img/btn_setting.png</file>
+        <file>img/btn_close_hover.png</file>
+        <file>img/btn_close_origin.png</file>
+        <file>img/xiaokang.jpg</file>
+        <file>img/btn_addcreate1.png</file>
+        <file>img/btn_addcreate2.png</file>
+        <file>img/btn_friendlist1.png</file>
+        <file>img/btn_friendlist2.png</file>
+        <file>img/btn_grouplist1.png</file>
+        <file>img/btn_grouplist2.png</file>
+        <file>img/btn_setting1.png</file>
+        <file>img/btn_setting2.png</file>
+        <file>img/btn_mini_hover.png</file>
+        <file>img/btn_create.png</file>
+        <file>img/btn_edit.png</file>
+        <file>img/Bulbasaur.png</file>
+        <file>img/Charmander.png</file>
+        <file>img/Eevee.png</file>
+        <file>img/Pikachu.png</file>
+        <file>img/Squirtle.png</file>
+        <file>img/twwwww_icon.png</file>
+    </qresource>
+</RCC>

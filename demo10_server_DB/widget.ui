@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_server">
+     <item row="1" column="0" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_ip">
+       <property name="placeholderText">
+        <string>客户端地址</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="3">
+      <widget class="QLineEdit" name="lineEdit_port">
+       <property name="placeholderText">
+        <string>客户端地址</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5" colspan="2">
+      <widget class="QPushButton" name="button_config_port">
+       <property name="text">
+        <string>👆确认</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="4">
+      <widget class="QPushButton" name="button_check_local_IP">
+       <property name="text">
+        <string>局域网地址：查看外网IP(客户端连接)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4" colspan="3">
+      <widget class="QLineEdit" name="lineEdit_port_set">
+       <property name="placeholderText">
+        <string>监听端口</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="7">
+      <widget class="QTextBrowser" name="textBrowser_receivedMessages"/>
+     </item>
+     <item row="4" column="0" rowspan="2">
+      <widget class="QComboBox" name="comboBox_receiver">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <item>
+        <property name="text">
+         <string>Broadcast</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="6">
+      <widget class="QLineEdit" name="lineEdit_send">
+       <property name="placeholderText">
+        <string>回车发送</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3" colspan="3">
+      <widget class="QPushButton" name="button_send">
+       <property name="text">
+        <string>发送</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="QPushButton" name="button_clear">
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="7">
+      <widget class="QLabel" name="label_title">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;服务器&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" colspan="2">
+      <widget class="QPushButton" name="button_attachment">
+       <property name="text">
+        <string>文件</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_login_signup_table">
+     <item row="3" column="2">
+      <widget class="QComboBox" name="comboBox_tables">
+       <item>
+        <property name="text">
+         <string>User</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Friendship</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Friendmsg</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Groupinfo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Groupship</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Groupmsg</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="3">
+      <widget class="QTableView" name="tableView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="3">
+      <widget class="QLineEdit" name="lineEdit_Password">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>密码</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QLineEdit" name="lineEdit_Username">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>用户名</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="button_signup">
+       <property name="text">
+        <string>注册</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="button_login">
+       <property name="text">
+        <string>登录</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="label_title_2">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;数据库&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_db_func">
+     <item row="1" column="0">
+      <widget class="QPushButton" name="button_query_group">
+       <property name="text">
+        <string>查询群聊</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QPushButton" name="button_send_friend">
+       <property name="text">
+        <string>发送好友</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QPushButton" name="button_alter_profile">
+       <property name="text">
+        <string>修改头像</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="lineEdit_send_friend_message">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>好友信息</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0" colspan="3">
+      <widget class="QPushButton" name="button_query_friend_list">
+       <property name="text">
+        <string>查询好友列表</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="lineEdit_send_group_message">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>群聊消息</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="3">
+      <widget class="QPushButton" name="button_query_group_list">
+       <property name="text">
+        <string>查询群聊列表</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="button_create_group">
+       <property name="text">
+        <string>建立群聊</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="button_query_friend">
+       <property name="text">
+        <string>查询好友</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_alter_nickname">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>昵称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QPushButton" name="button_add_friend">
+       <property name="text">
+        <string>添加好友</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="button_send_group">
+       <property name="text">
+        <string>发送群聊</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QPushButton" name="button_alter_nickname">
+       <property name="text">
+        <string>修改昵称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="lineEdit_send_friend_name">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>好友用户名</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="button_query_group_member">
+       <property name="text">
+        <string>查询群成员</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="button_add_group">
+       <property name="text">
+        <string>添加群聊</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_send_group_name">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>群聊名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_query_friend">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>好友用户名</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_add_friend">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>好友用户名</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_alter_profile">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>头像文件名</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_query_group_member">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>群聊名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_add_group">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>群聊名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_query_group">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>群聊名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_create_group">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>群聊名称</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

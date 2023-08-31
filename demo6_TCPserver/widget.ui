@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>382</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_ip">
+       <property name="placeholderText">
+        <string>客户端地址</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="3">
+      <widget class="QLineEdit" name="lineEdit_port">
+       <property name="placeholderText">
+        <string>客户端地址</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5" colspan="2">
+      <widget class="QPushButton" name="button_config_port">
+       <property name="text">
+        <string>👆确认</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="4">
+      <widget class="QPushButton" name="button_check_local_IP">
+       <property name="text">
+        <string>局域网地址：查看外网IP(客户端连接)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4" colspan="3">
+      <widget class="QLineEdit" name="lineEdit_port_set">
+       <property name="placeholderText">
+        <string>监听端口</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="7">
+      <widget class="QTextBrowser" name="textBrowser_receivedMessages"/>
+     </item>
+     <item row="4" column="0" rowspan="2">
+      <widget class="QComboBox" name="comboBox_receiver">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <item>
+        <property name="text">
+         <string>Broadcast</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="6">
+      <widget class="QLineEdit" name="lineEdit_send">
+       <property name="placeholderText">
+        <string>回车发送</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3" colspan="3">
+      <widget class="QPushButton" name="button_send">
+       <property name="text">
+        <string>发送</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="QPushButton" name="button_clear">
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="7">
+      <widget class="QLabel" name="label_title">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;服务器&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" colspan="2">
+      <widget class="QPushButton" name="button_attachment">
+       <property name="text">
+        <string>文件</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
